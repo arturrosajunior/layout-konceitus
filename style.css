@@ -1,0 +1,436 @@
+:root {
+    --colorCinza: #2F2B28;
+    --colorIniciar: #c9d522;
+    --colorProcessoSeguinte: #5FA6E3;
+    --colorExecucao: #ffc912;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+button:focus {
+    border: 0 !important;
+    outline: navajowhite;
+}
+
+body {
+    position: relative;
+    background: #fff;
+    overflow-y: scroll;
+    /* padding-bottom: 40px; */
+}
+
+body * {
+    font-family: 'Roboto', sans-serif;
+}
+
+body .container {
+    min-height: 768px;
+    /* height: 768px; */
+    max-width: 1366px !important;
+    overflow-y: scroll;
+}
+
+.position-fixed.bg-white {
+    background: #fff !important;
+    z-index: 1;
+    width: 100%;
+    padding: 20px 37px 2px 26px;
+    top: 0;
+    left: 0;
+}
+
+section.infos-encomenda {
+    padding-top: 132px;
+}
+
+
+/* <!-- login --> */
+
+body.login .container {
+    display: table;
+    margin: 0px auto;
+    background: url(assets/img/bg-tela-login.jpg) center no-repeat;
+    background-size: cover;
+}
+
+body.login .container .align-middle {
+    display: table-cell;
+}
+
+body.login .container .align-middle form {
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+body.login .container .align-middle form input.form-control {
+    height: 50px !important;
+}
+
+body.login .container .align-middle form .btn.btn-warning {
+    background: #c2d005 !important;
+    border-color: #c2d005 !important;
+    color: #fff;
+    padding: 10px 5px !important;
+    font-weight: 600;
+}
+
+
+/* TELA DE ENCOMENDAS  */
+
+body.page-encomendas table {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+body.page-encomendas table .td-qtd {
+    width: 160px;
+    padding-left: 15px;
+}
+
+body.page-encomendas .utilizador .hora:before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+    background: url(assets/img/clock.png)center no-repeat;
+    background-size: 18px;
+}
+
+body.page-encomendas .utilizador small {
+    text-transform: uppercase;
+    color: var(--colorCinza);
+    font-weight: bold;
+    font-size: 14px !important;
+}
+
+body.page-encomendas .utilizador p {
+    color: #908F8E;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+body.page-encomendas .encomendas {
+    margin-top: 8px;
+}
+
+body.page-encomendas .encomendas p.legenda {
+    font-size: 13px !important;
+    font-weight: 600;
+    color: var(--colorCinza);
+    text-transform: uppercase;
+}
+
+body.page-encomendas .encomendas p.legenda span {
+    padding: 4px 30px;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+body.page-encomendas .encomendas p.legenda span.bg-iniciar {
+    background: var(--colorIniciar);
+}
+
+body.page-encomendas .encomendas p.legenda span.bg-processo-seguinte {
+    background: var(--colorProcessoSeguinte);
+}
+
+body.page-encomendas .encomendas p.legenda span.bg-execucao {
+    background: var(--colorExecucao);
+}
+
+body.page-encomendas .encomendas h2.text-uppercase {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--colorCinza);
+}
+
+body.page-encomendas .cabecalho-lista {
+    background: var(--colorCinza);
+    padding: 10px 5px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+body.page-encomendas .cabecalho-lista ul {
+    list-style: none;
+}
+
+body.page-encomendas .cabecalho-lista ul li {
+    padding: 0!important;
+    font-weight: 700;
+}
+
+body.page-encomendas .lista-tarefas {
+    padding-top: 176px;
+}
+
+body.page-encomendas .lista-tarefas button {
+    display: block;
+    width: 100%;
+    border: 2px solid transparent !important;
+    border-radius: 5px !important;
+    margin: 10px 0px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.lista-tarefas button.bg-execucao:hover,
+.lista-tarefas button.bg-execucao:focus {
+    border: 2px solid var(--colorExecucao) !important;
+}
+
+.lista-tarefas button.bg-seguinte:hover,
+.lista-tarefas button.bg-seguinte:focus {
+    border: 2px solid var(--colorProcessoSeguinte) !important;
+}
+
+.lista-tarefas button.bg-iniciar:hover,
+.lista-tarefas button.bg-iniciar:focus {
+    border: 2px solid var(--colorIniciar) !important;
+}
+
+body.page-encomendas .lista-tarefas ul li ul.lista-guia li {
+    font-size: 14px;
+}
+
+body.page-encomendas .lista-tarefas ul li ul.lista-guia li p.d-block:first-child {
+    margin-top: 10px;
+}
+
+body.page-encomendas .lista-tarefas ul li ul.lista-guia li p.d-block:last-child {
+    margin-bottom: 10px;
+}
+
+body.page-encomendas .lista-tarefas ul li ul.lista-guia li p.d-block {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+body.page-encomendas .lista-tarefas ul {
+    list-style: none;
+    width: 100%;
+}
+
+body.page-encomendas .lista-tarefas ul.tarefa {
+    list-style: none;
+    border-radius: 5px;
+    align-items: center;
+    background: #fff;
+    width: 100%;
+    padding: 20px 0px;
+}
+
+body.page-encomendas .lista-tarefas ul li.w-100.border {
+    margin: 0px 20px 15px;
+}
+
+body.page-encomendas .lista-tarefas ul li.bg-seguinte {
+    background: var(--colorProcessoSeguinte);
+}
+
+body.page-encomendas .lista-tarefas ul li.bg-iniciar {
+    background: var(--colorIniciar);
+}
+
+body.page-encomendas .lista-tarefas ul li.bg-execucao {
+    background: var(--colorExecucao);
+}
+
+body.page-encomendas .lista-tarefas ul li.button-tarefa {
+    border-radius: 5px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    min-height: 100%;
+    position: absolute;
+    display: table;
+}
+
+body.page-encomendas .lista-tarefas ul li.button-tarefa .align-middle {
+    display: table-cell;
+}
+
+body.page-encomendas .lista-tarefas ul li.button-tarefa small {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+body.page-encomendas .lista-tarefas ul.tarefa .cabecalho-tarefa {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+
+
+/* 
+body.page-encomendas .lista-tarefas ul.tarefa:hover {
+    border-color: var(--colorIniciar) !important;
+} */
+
+body.page-encomendas .lista-tarefas ul.tarefa:hover li.bg-iniciar {
+    background: var(--colorIniciar) !important;
+}
+
+
+/* INFORMACOES GERAL */
+
+body.page-encomendas.informacoes .btn-voltar.btn-light {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 2px 5px !important;
+    text-transform: uppercase;
+    background: #C6C7C0 !important;
+    float: left;
+    margin-top: 2px;
+    margin-right: 10px;
+}
+
+body.page-encomendas.informacoes .nav-tabs .nav-item {
+    width: calc(100% - 50%) !important;
+}
+
+body.page-encomendas.informacoes .nav-tabs .nav-link {
+    border-radius: 0px !important;
+    text-align: center;
+    padding: 15px 10px;
+    background: #C6C7C0;
+    font-weight: bold;
+    font-size: 24px;
+    border: 0;
+}
+
+body.page-encomendas.informacoes .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    background: var(--colorCinza) !important;
+    position: relative;
+}
+
+body.page-encomendas.informacoes .nav-tabs .nav-link.active:after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: var(--colorCinza);
+    transform: rotateZ( 45deg);
+    left: 49%;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+}
+
+table .td-qtd {
+    width: 220px;
+    padding-left: 15px;
+}
+
+table td.td-desig {
+    width: 420px;
+}
+
+body.page-encomendas.informacoes .card li,
+.card.descricao h3,
+.card.imagem h3,
+.card.docs h3 {
+    font-size: 24px !important;
+}
+
+a.doc {
+    margin-top: 20px;
+}
+
+a.doc:hover {
+    text-transform: unset;
+    text-decoration: unset;
+}
+
+a.doc h3 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    color: var(--colorCinza);
+}
+
+a.doc p {
+    color: var(--colorCinza);
+}
+
+.encomenda-para-iniciar .btn.btn-success {
+    background: var(--colorIniciar);
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 0;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 22px;
+    color: var(--colorCinza) !important;
+}
+
+.encomenda-para-iniciar h3:before {
+    content: '';
+    display: inline-block;
+    width: 36px;
+    height: 22px;
+    background: url(assets/img/play.png)center no-repeat;
+    background-size: 22px;
+}
+
+.encomenda-para-iniciar h3 {
+    color: #fff;
+}
+
+.encomenda-para-iniciar {
+    background: var(--colorCinza);
+    border-radius: 5px;
+}
+
+.encomenda-em-espera .btn-light {
+    background: #E2E3DF;
+    float: left;
+    width: 33.3%;
+    height: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #898783;
+    border: 0;
+    border-radius: 0;
+}
+
+.btn-w-33 {
+    float: left;
+    width: 32.3%;
+    height: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 3px;
+    position: relative;
+    background: #E2E3DF;
+}
+
+.btn-retormar.active {
+    background: var(--colorIniciar);
+}
+
+.btn-pausar.active {
+    background: var(--colorExecucao);
+}
+
+.btn-concluir.active,
+.btn.btn-danger {
+    background: #D53607 !important;
+}
